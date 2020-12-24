@@ -1,7 +1,7 @@
 #include "Team.h"
 
-Team::Team(const string namePerson, const int hp, const string& nameTeam)
-	:Unit(namePerson,hp), nameTeam(nameTeam)
+Team::Team(const string namePerson, const int hp, const int dmg, const string& nameTeam)
+	:Unit(namePerson,hp,dmg), nameTeam(nameTeam)
 {}
 
 void Team::liveCharacter(bool live)
