@@ -8,6 +8,7 @@ public:
 	virtual void print() const;
 	virtual void typePerson() const abstract;
 	virtual void typeWeapon() const abstract;
+	virtual void liveCharacter() const;
 	virtual void sound() const abstract;
 
 

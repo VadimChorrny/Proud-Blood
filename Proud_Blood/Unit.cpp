@@ -11,3 +11,8 @@ void Unit::print() const
 	typeWeapon();
 	sound();
 }
+
+void Unit::liveCharacter() const
+{
+	cout << "Dont know" << endl;
+}

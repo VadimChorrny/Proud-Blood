@@ -4,15 +4,21 @@ Team::Team(const string namePerson, const int hp, const int dmg, const string& n
 	:Unit(namePerson,hp,dmg), nameTeam(nameTeam)
 {}
 
-void Team::liveCharacter(bool live)
+void Team::liveCharacter() const
 {
-	cout << "Person in it moment : \t" << live << endl;
+	cout << "Person in it moment : \t" << endl;
 }
 
-void Team::type() const
+void Team::typePerson() const
 {
-	cout << "Person type:\t" << endl;
+	cout << "Type peson:\t";
 }
+
+void Team::typeWeapon() const
+{
+	cout << "Type weapon:\t";
+}
+
 
 void Team::print() const
 {

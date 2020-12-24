@@ -6,8 +6,9 @@ class Team :
 {
 public:
     Team(const string namePerson, const int hp, const int dmg, const string& nameTeam);
-    void liveCharacter(bool live);
-    void type() const;
+    void liveCharacter() const;
+    void typePerson() const;
+    void typeWeapon() const;
     void print() const; 
 private:
     string nameTeam;
