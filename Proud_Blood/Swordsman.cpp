@@ -28,3 +28,8 @@ void Swordsman::print() const
 	Team::print();
 	cout << "Dodge = " << dodge << endl;
 }
+
+void Swordsman::sound() const
+{
+	cout << "HA-HAAAYAAAA..." << endl;
+}

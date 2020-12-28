@@ -2,7 +2,5 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Unit.h"
-#include "Team.h"
-#include "Swordsman.h"
+#include <list>
 using namespace std;

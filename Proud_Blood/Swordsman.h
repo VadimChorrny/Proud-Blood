@@ -10,6 +10,7 @@ public:
     void typeWeapon() const override;
     void liveCharacter() const override;
     void print() const override;
+    void sound() const override;
 private:
     int dodge;
 };
