@@ -9,8 +9,7 @@ public:
 	FwdList() = default;
 	FwdList(const FwdList& arg);
 	// Need development
-	//FwdList& operator = (const FwdList& obj);
-	bool operator == (const FwdList& obj);
+	//FwdList concat(FwdList arg);
 	void pushFront(const T& data);
 	void pushTail(const T& data);
 	void pushAfter(const T& searchData, const T& insData);
@@ -54,6 +53,23 @@ inline FwdList<T>::FwdList(const FwdList& arg)
 	}
 }
 
+//template<typename T>
+//inline FwdList FwdList<T>::concat(FwdList arg)
+//{
+//	FwdList<T>  tmp;
+//	Node* temp = head;
+//	while (temp != tail) {
+//		tmp.pushFront(temp->data);
+//		temp = temp->next;
+//	}
+//	temp = obj.head;
+//	while (temp != obj.tail) {
+//		tmp.pushFront(temp->data);
+//		temp = temp->next;
+//	}
+//	return tmp;
+//}
+
 // NOT WORKED | NEED FIXED
 //template<typename T>
 //inline FwdList& FwdList<T>::operator=(const FwdList& arg)
@@ -66,30 +82,7 @@ inline FwdList<T>::FwdList(const FwdList& arg)
 //	return *this;
 //}
 
-template<typename T>
-inline bool FwdList<T>::operator==(const FwdList& arg)
-{
-	Node* tempFirst = head;
-	Node* tempSecond = arg.head;
 
-	while (tempFirst != tail && tempSecond != arg.tail) {
-		if (tempFirst->data == tempSecond->data) {
-			tempFirst = tempFirst->next;
-			tempSecond = tempSecond->next;
-
-		}
-		else {
-			return false;
-		}
-	}
-
-	if (tempFirst != nullptr && tempSecond != nullptr) {
-		if (tempFirst->data == tempSecond->data) {
-			return true;
-		}
-	}
-	return false;
-}
 
 //template<typename T>
 //inline list<T> FwdList<T>::operator+(const list<T>& first, const list<T>& second)

@@ -5,18 +5,17 @@ class BusList
 public:
 	struct Bus
 	{
-		size_t numBus;
+		size_t numBus = 0;
 		string name;
 		size_t numRoute;
 	};
-	void addNewBus(const Bus& bus);
-	void sellBus(const Bus& id);
-	void PrintParkList() const;
-	void PrintRouteList() const;
+	void setName(const string& name) const;
+	void setNumberBus(const size_t& numBus) const;
+	void setNumberRoute(const size_t& numRoute) const;
+	
 private:
 	
-	list<Bus> busInAutoPark;
-	list<Bus> busInRoute;
+	Bus* bus;
 	friend class AutoPark;
 };
 

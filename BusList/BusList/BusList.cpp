@@ -1,16 +1,28 @@
 #include "BusList.h"
 
-void BusList::addNewBus(const Bus& bus)
+BusList::BusList(const string& name, const size_t& numBus, const size_t& numRoute)
 {
-	busInAutoPark.push_back(bus);
+	setName(name);
+	setNumberBus(numBus);
+	setNumberRoute(numRoute);
 }
 
-void BusList::sellBus(const Bus& id)
+void BusList::setName(const string& name) const
 {
-	busInAutoPark.remove(id);
+	if (!name.empty())
+		bus->name = name;
 }
 
-void BusList::PrintParkList() const
+void BusList::setNumberBus(const size_t& numBus) const
 {
-	// need dev
+	// future bug!!!!
+	++bus->numBus;
+	if (numBus > 0)
+		bus->numBus = numBus;
+}
+
+void BusList::setNumberRoute(const size_t& numRoute) const
+{
+	if (numRoute > 0)
+		bus->numRoute = numRoute;
 }
