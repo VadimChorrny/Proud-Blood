@@ -21,12 +21,21 @@
     <ClCompile Include="BusList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AutoPark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Lib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BusList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoPark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
